@@ -39,7 +39,19 @@ public class UserRegistration {
     }
 
 
-  
+    public void mobileNum(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Mobile number with country code (91)  : " );
+        String mobileNum = sc.nextLine();
+        boolean check = Pattern.matches("^91\\s[6789][0-9]{9}", mobileNum);
+        if (check)
+            System.out.println("Perfect! Mobile #Num");
+        else
+            System.out.println("Please Enter a Valid Mobile Num ex:- 90 9533182605");
+    }
+
+    
+
 
 
     public static void main(String[] args) {
@@ -51,8 +63,8 @@ public class UserRegistration {
         user.firstNameCheck();
         user.lastNameCheck();
         user.email();
+        user.mobileNum();
         
-
 
     }
 }
