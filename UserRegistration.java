@@ -74,7 +74,7 @@ public class UserRegistration {
             System.out.println("Please Enter a Valid password, it should have minimum 8 characters with 1 upper case");
     }
 
-    // rule2  minimum 8 characters with, 1 upper case and 1 Numeric
+    // rule3  minimum 8 characters with, 1 upper case and 1 Numeric
     public void passWordRule3(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter password :  ");
@@ -87,7 +87,7 @@ public class UserRegistration {
     }
 
 
-    // rule1  minimum 8 characters with, 1 upper case, 1 Numeric and 1 Special Char
+    // rule4  minimum 8 characters with, 1 upper case, 1 Numeric and 1 Special Char
     public void passWordRule4(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter password :  ");
